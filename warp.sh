@@ -1,4 +1,32 @@
 #!/usr/bin/env bash
+#
+# https://github.com/P3TERX/warp.sh
+# Description: Cloudflare WARP Installer
+# System Required: Debian, Ubuntu, Fedora, CentOS, Oracle Linux, Arch Linux
+# Version: 1.0.40_Final
+#
+# MIT License
+#
+# Copyright (c) 2021-2024 P3TERX <https://p3terx.com>
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
 
 shVersion='1.0.40_Final'
 
@@ -56,7 +84,7 @@ WireGuard_Interface='wgcf'
 WireGuard_ConfPath="/etc/wireguard/${WireGuard_Interface}.conf"
 
 WireGuard_Interface_DNS_IPv4='1.1.1.1,1.0.0.1'
-WireGuard_Interface_DNS_IPv6='2606:4700:4700::1111,2606:4700:4700::1001'
+WireGuard_Interface_DNS_IPv6='2606:4700:4700::1111,2606:4700:4700::1111'
 WireGuard_Interface_DNS_46="${WireGuard_Interface_DNS_IPv4},${WireGuard_Interface_DNS_IPv6}"
 WireGuard_Interface_DNS_64="${WireGuard_Interface_DNS_IPv6},${WireGuard_Interface_DNS_IPv4}"
 WireGuard_Interface_Rule_table='51888'
